@@ -1,0 +1,121 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Tobías Rossi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1e1e1e;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .project {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .project h3 {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+    .project h3 img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      display: inline-block;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .project a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e1e1e;
+      color: white;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio de Tobías Rossi</h1>
+  </header>
+
+  <main>
+    <section class="projects">
+      <div class="project">
+        <h3>
+          <img src="https://i.postimg.cc/RV9RT7Zw/beb.jpg" alt="Icono Bajo El Bunker" />
+          Pagina Bajo El Bunker
+        </h3>
+        <p>
+          Landing page dedicada a la banda "Bajo el Bunker" diseñada para presentar un proyecto de Coderhouse. Estilo moderno y sobrio, a pedido de la banda, basado en Bootstrap 5.<br />
+          Destaca una paleta oscura y una navegación sencilla e intuitiva.<br />
+          Se buscaba una forma de interactuar con la banda, mostrando su logo, enlaces a redes sociales y una sección principal dedicada a su contenido visual llamado Drunker.<br />
+          Diseño responsive para móviles y escritorio y tipografía Inter para una lectura clara.
+        </p>
+        <a href="https://tobiasrossi.github.io/beb/index.html#" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+      </div>
+
+      <div class="project">
+        <h3>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_Apps_Script.svg" alt="Icono Google Apps Script" />
+          Weekly GPH Reminder
+        </h3>
+        <p>
+          Script que manda de manera automatica y semanal datos del fichaje de cada usuario del proyecto via email.<br />
+          El correo incluye informacion clave, presentada en forma de tabla.<br />
+          Ademas, el mensaje se manda tanto a performer como a su respectivo team lead.<br />
+          Garantiza una comunicación efectiva y regular sobre el seguimiento de métricas importantes.
+        </p>
+        <a href="https://script.google.com/home/projects/1c99_SaFHpBf3ljke0iRKmD3C_7LvbsAod_Ido1kppFBADLo_7jJ1h5w1/edit?pli=1" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tobías Rossi - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
