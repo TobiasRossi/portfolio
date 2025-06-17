@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio - Tobías Rossi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos de Desarrollo Web - Tobías Rossi</title>
+  <link rel="icon" href="https://i.postimg.cc/RV9RT7Zw/beb.jpg" type="image/jpg">
   <style>
     * {
       margin: 0;
@@ -26,9 +28,14 @@
       max-width: 900px;
       margin: auto;
     }
-    h1, h2 {
+    h1 {
       text-align: center;
       margin-bottom: 20px;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
     }
     .projects {
       display: grid;
@@ -57,11 +64,18 @@
       border-radius: 4px;
     }
     .project a {
-      color: #007acc;
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #007acc;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background 0.3s;
       text-decoration: none;
     }
     .project a:hover {
-      text-decoration: underline;
+      background-color: #005b99;
+      text-decoration: none;
     }
     footer {
       text-align: center;
@@ -70,7 +84,17 @@
       color: white;
       margin-top: 40px;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
+      .projects {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 700px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 500px) {
       .projects {
         grid-template-columns: 1fr;
       }
@@ -83,6 +107,9 @@
   </header>
 
   <main>
+    <section class="intro">
+      <p>¡Hola! Soy Tobías Rossi, desarrollador con experiencia en automatizaciones y diseño web. Te invito a conocer mis proyectos.</p>
+    </section>
     <section class="projects">
       <div class="project">
         <h3>
@@ -90,10 +117,7 @@
           Pagina Bajo El Bunker
         </h3>
         <p>
-          Landing page dedicada a la banda "Bajo el Bunker" diseñada para presentar un proyecto de Coderhouse. Estilo moderno y sobrio, a pedido de la banda, basado en Bootstrap 5.<br />
-          Destaca una paleta oscura y una navegación sencilla e intuitiva.<br />
-          Se buscaba una forma de interactuar con la banda, mostrando su logo, enlaces a redes sociales y una sección principal dedicada a su contenido visual llamado Drunker.<br />
-          Diseño responsive para móviles y escritorio y tipografía Inter para una lectura clara.
+          Landing page para la banda "Bajo el Bunker", desarrollada como proyecto final en Coderhouse. Utiliza Bootstrap 5 y un diseño oscuro y sobrio, alineado con la estética de la banda. Incluye navegación intuitiva, enlaces a redes sociales, y una sección visual interactiva llamada "Drunker". Totalmente responsive y con tipografía Inter para una experiencia clara y moderna en todos los dispositivos.
         </p>
         <a href="https://tobiasrossi.github.io/beb/index.html#" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
       </div>
@@ -104,10 +128,7 @@
           Weekly GPH Reminder
         </h3>
         <p>
-          Script que manda de manera automatica y semanal datos del fichaje de cada usuario del proyecto via email.<br />
-          El correo incluye informacion clave, presentada en forma de tabla.<br />
-          Ademas, el mensaje se manda tanto a performer como a su respectivo team lead.<br />
-          Garantiza una comunicación efectiva y regular sobre el seguimiento de métricas importantes.
+          Automatización semanal con Google Apps Script que envía por correo electrónico el resumen de fichajes de cada usuario del proyecto. El informe, en formato de tabla, se distribuye tanto a cada performer como a su respectivo team lead. Mejora la comunicación y el seguimiento de métricas clave de forma eficiente y constante.
         </p>
         <a href="https://script.google.com/home/projects/1c99_SaFHpBf3ljke0iRKmD3C_7LvbsAod_Ido1kppFBADLo_7jJ1h5w1/edit?pli=1" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
       </div>
