@@ -38,8 +38,9 @@
     }
     .projects {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
+      justify-content: center;
     }
     .project {
       background: white;
@@ -81,7 +82,33 @@
       padding: 20px;
       background: #1e1e1e;
       color: white;
-      margin-top: 40px;
+      margin-top: 20px;
+    }
+    .contacto {
+      color: white;
+      text-align: center;
+      margin-top: 60px;
+      padding: 40px 20px;
+      background-color: #1e1e1e;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .contacto h2 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+    .contacto ul {
+      list-style: none;
+      padding: 0;
+    }
+    .contacto li {
+      margin: 10px 0;
+    }
+    .contacto a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    .contacto a:hover {
+      text-decoration: underline;
     }
     @media (max-width: 900px) {
       .projects {
@@ -107,7 +134,7 @@
 
   <main>
     <section class="intro">
-      <p>¡Hola! Soy Tobías Rossi, desarrollador con experiencia en automatizaciones y diseño web. Te invito a conocer mis proyectos.</p>
+      <p>Hola, soy Tobías Rossi, desarrollador con experiencia en automatizaciones y diseño web. Te invito a conocer mis proyectos.</p>
     </section>
     <section class="projects">
       <div class="project">
@@ -131,8 +158,28 @@
         </p>
         <a href="https://script.google.com/home/projects/1c99_SaFHpBf3ljke0iRKmD3C_7LvbsAod_Ido1kppFBADLo_7jJ1h5w1/edit?pli=1" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
       </div>
+
+      <div class="project">
+        <h3>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" alt="Icono Google Apps Script" />
+          Análisis Top 100 Spotify 
+        </h3>
+        <p>
+          Proyecto en Google Colab en el que hago un análisis del Top 100 de Spotify entre los años 2010 y 2019. Mediante el uso de Python y alguna que otra herramienta evaluo artistas más frecuentes, géneros dominantes y duración promedio.
+        </p>
+        <a href="https://colab.research.google.com/drive/1rAbBWLu18IsvSbzknNmTZMq3CFcSrDkz?usp=sharing" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+      </div>
     </section>
   </main>
+
+  <section class="contacto">
+    <h2>Contacto</h2>
+    <ul>
+      <li>Email: <a href="mailto:trossi2001@gmail.com">trossi2001@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/rossi-tobias/" target="_blank">linkedin.com/in/rossi-tobias</a></li>
+      <li>GitHub: <a href="https://github.com/TobiasRossi" target="_blank">github.com/TobiasRossi</a></li>
+    </ul>
+  </section>
 
   <footer>
     <p>&copy; 2025 Tobías Rossi - Todos los derechos reservados</p>
